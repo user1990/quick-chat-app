@@ -1,0 +1,25 @@
+{
+  "name": "quick-chat-app",
+  "version": "1.0.0",
+  "description": "Node chat app build with socket.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/user1990/quick-chat-app.git"
+  },
+  "author": "user1990",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/user1990/quick-chat-app/issues"
+  },
+  "homepage": "https://github.com/user1990/quick-chat-app#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.6"
+  }
+}
