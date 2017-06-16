@@ -2,10 +2,10 @@
   "name": "quick-chat-app",
   "version": "1.0.0",
   "description": "Node chat app build with socket.io",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

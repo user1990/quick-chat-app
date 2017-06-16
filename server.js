@@ -1,12 +1,16 @@
 'use strict';
-// Requiring dependencies
 const express = require('express');
-const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-
-// Requiring files
+const path = require('path');
 const secret = require('./config/secret');
+
+// const { generateMessage, generateLocationMessage } = require('./utils/message');
+// const { isRealString } = require('./utils/validation');
+// const { Users } = require('./utils/users');
+
+var publicPath = path.join(__dirname, '../public');
+var app = express();
 
 // ==========
 // APP CONFIG
@@ -22,7 +26,7 @@ mongoose.connect(secret.database, (err) => {
   }
 });
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(publicPath));
 
 // LISTEN TO PORT
 app.listen(secret.port, (err) => {
