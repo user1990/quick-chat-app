@@ -4,9 +4,10 @@ const http = require('http');
 const port = process.env.PORT || 3000;
 const socketIO = require('socket.io');
 
-const { generateMessage, generateLocationMessage } = require('./utils/message');
-const { isRealString } = require('./utils/validation');
-const { Users } = require('./utils/users');
+const generateMessage = require('./server/utils/message');
+const generateLocationMessage = require('./server/utils/message');
+const isRealString = require('./server/utils/validation');
+const Users = require('./server/utils/users');
 
 var app = express();
 var server = http.createServer(app);
