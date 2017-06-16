@@ -12,9 +12,24 @@ var io = socketIO(server);
 
 app.use(express.static(__dirname + '/public'));
 
-io.on('connection', (socket) => {
+io.on('connection', function(socket) {
   console.log('New User Connected');
+
+  socket.emit('newMessage', {
+    from: 'test@gmail.com',
+    text: 'test',
+    createdAt: 1990
+  });
+
+  socket.on('createMessage', (newMessage) => {
+    console.log('createMessasge', newMessage);
+  });
+
+  socket.on('disconnect', function() {
+    console.log('User was disconnected');
+  });
 });
+
 server.listen(port, (err) => {
   if (err) { throw err; }
   console.log('======================');

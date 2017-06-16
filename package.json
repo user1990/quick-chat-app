@@ -4,7 +4,7 @@
   "description": "Node chat app build with socket.io",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,11 +20,11 @@
   "dependencies": {
     "express": "^4.15.3",
     "moment": "^2.18.1",
-    "mongoose": "^4.10.6",
     "socket.io": "^2.0.3"
   },
   "devDependencies": {
     "expect": "^1.20.2",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0"
   }
 }
