@@ -1,3 +1,5 @@
+![chat](https://user-images.githubusercontent.com/13827656/27255370-0490714e-53a6-11e7-8003-e5403ef9131f.jpg)
+
 # quick-chat-app
 Real-Time Web App build with NodeJS, Socket.io.
 
